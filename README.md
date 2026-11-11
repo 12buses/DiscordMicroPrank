@@ -1,4 +1,4 @@
-# MicPrank
+MicPrank
 
 Консольная утилита для Windows: на несколько секунд выключает микрофон в Discord.
 
@@ -6,14 +6,15 @@
 
 > **Розыгрыш.** Начинайте с включённого микрофона — горячая клавиша работает как переключатель.
 
-## Требования
+    Для hotkey-режима: глобальные горячие клавиши Discord включены, либо флаг --focus-discord.
 
 - Windows 10/11 x64, установленный Discord.
 - .NET 9 Runtime **или** self-contained `.exe` из `dist\self-contained`.
 - Для `hotkey`-режима: глобальные горячие клавиши Discord включены, либо флаг `--focus-discord`.
 - Права MicPrank и Discord должны совпадать.
 
-## Быстрый старт
+Быстрый старт
+powershell
 
 ```powershell
 .\MicPrank.exe --diagnose              # проверить окружение
@@ -54,7 +55,6 @@
 
 ```powershell
 .\build.ps1
-```
 
 Создаёт две сборки в `dist`:
 
